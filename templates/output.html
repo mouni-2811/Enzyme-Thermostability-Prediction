@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Protein Stability Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <h1>Protein Stability Prediction</h1>
+    {% if Temp is defined %}
+    <div class="div">
+    <h2>Results:</h2>
+    <p>Temperature: {{ Temp }}&deg;C</p>
+  </div>
+  <div>
+    <p>DNA:</p>
+    <textarea id="DNA" rows="10" cols="100"> {{ DNA }}</textarea>
+    <br>
+    <button class="copy-btn" onclick="DNA()">Copy DNA Sequence</button>
+    </div>
+    <div class="div">
+      <p>mRNA:</p>
+      <textarea id="mRNA" rows="10" cols="100"> {{ mRNA }}</textarea>
+      <br>
+      <button class="copy-btn" onclick="mRNA()">Copy MRNA Sequence</button>
+      </div>
+    {% endif %}
+    <script>
+      function DNA() {
+        var textarea = document.getElementById("DNA");
+        textarea.select();
+        document.execCommand("copy");
+      }
+      function mRNA() {
+        var textarea = document.getElementById("mRNA");
+        textarea.select();
+        document.execCommand("copy");
+      }
+    </script>
+  </body>
+</html>

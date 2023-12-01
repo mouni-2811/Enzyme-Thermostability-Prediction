@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Protein Stability Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  </head>
+  <body>
+    <h1>Protein Stability Prediction</h1>
+    <form method="POST" action="{{ url_for('getprediction') }}">
+      <label for="ps">Protein Sequence:</label><br>
+      <input type="text" id="ps" name="ps" required><br>
+      <label for="ph">pH:</label><br>
+      <input type="number" id="ph" name="ph" min="0"  step="0.1" required><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

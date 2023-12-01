@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #888888;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+h2 {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+p {
+    font-size: 1.1em;
+}
+div{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #888888;
+    margin-top: 20px;
+}
+textarea{
+    background-color: #F5F5F5;
+    padding: 10px;
+    width:100%;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray; /* gray background color */
+    font-family: Arial, sans-serif; /* font style */
+    border-color: black;
+}
+.copy-btn {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.copy-btn:hover {
+    background-color: #3e8e41;
+}
+#protein_sequence {
+    background-color: lightgray; /* gray background color */
+    font-family: Arial, sans-serif; /* font style */
+    border-color: black;
+}
